@@ -41,4 +41,4 @@ from olap.olap_sh_work_agent_di
 where stat_date between '20180301' and '20180312'
 group by stat_date,user_code) A2 on A2.user_code=A1.empid and A2.stat_date=rptdate
 group by A1.rptdate,A1.buname,A1.partname) total
-group by total.buname,total.partname
+group by total.buname,total.partname 
